@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Playlist extends Component {
-  render() {
-    return (
+const Playlist = () => (
       <section className="panel panel-default">
         <div className="panel-body">
           <div className="col-md-12 pb25">
@@ -49,7 +47,5 @@ class Playlist extends Component {
         </table>
       </section>
     );
-  }
-}
 
 export default Playlist;

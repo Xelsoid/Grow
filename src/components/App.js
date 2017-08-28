@@ -1,21 +1,10 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import MainPage from './MainPage';
-import Profile from './Profile';
-import Signup from './Signup';
-import Signin from './Signin';
+import Root from './Root';
 
-class App extends Component {
+class App extends Component { // container/smart/fat/statefull component
   render() {
     return (
-      <Router>
-        <Switch>
-          <Route exact  path = '/' component = {MainPage}/>
-          <Route path = '/signup' component = {Signup}/>
-          <Route path = '/signin' component = {Signin}/>
-          <Route path = '/profile' component = {Profile}/>
-        </Switch>
-      </Router>
+      <Root/>
     );
   }
 }

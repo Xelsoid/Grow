@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-class Header extends Component {
-  render() {
-    return (
+const Header = () => (
       <nav className="navbar navbar-light pb50">
         <Link to="/" className="navbar-brand main-logo">Dashboard</Link>
         <ul className="nav navbar-nav">
@@ -16,7 +14,5 @@ class Header extends Component {
         </ul>
       </nav>
     );
-  }
-}
 
 export default Header;

@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class LabelContent extends Component {
-  render() {
-    return (
+const LabelContent = () => (
       <section className="row text-center placeholders pb50">
         <div className="col-6 col-sm-3 placeholder">
           <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" className="img-fluid rounded-circle mb25" alt="Generic placeholder thumbnail"/>
@@ -26,7 +24,5 @@ class LabelContent extends Component {
         </div>
       </section>
     );
-  }
-}
 
 export default LabelContent;
